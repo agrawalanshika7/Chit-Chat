@@ -1,0 +1,23 @@
+.list {
+    background-color: rgba(37, 46, 63);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+@media (max-width: 1000px) {
+    .list {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transform: translateX(-100%);
+        transition: 0.4s;
+    }
+
+    .list.active {
+        transform: translateX(0);
+    }
+}

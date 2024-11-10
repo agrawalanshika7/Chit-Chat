@@ -1,0 +1,163 @@
+.makeGroup {
+    width: max-content;
+    height: max-content;
+    padding: 30px;
+    background-color: rgba(17, 25, 40, 0.8);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    .close {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        display: none;
+        cursor: pointer;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            gap: 5px;
+
+            img {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            #groupavatar {
+                display: none;
+            }
+
+            input, textarea{
+                border: none;
+                outline: none;
+                border-radius: 5px;
+                padding: 10px;
+            }
+        }
+
+        .membersContainer {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                align-self: flex-start;
+            }
+
+            button {
+                height: 40px;
+                padding: 10px;
+                align-self: flex-end;
+                background-color: #5183fe;
+            }
+
+            select {
+                height: 40px;
+                width: 100%;
+                padding: 10px;
+                background-color: transparent;
+                color: white;
+                border: none;
+                outline: none;
+
+                option {
+                    padding: 10px;
+                    background-color: rgba(17, 25, 40, 0.8);
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        .usersContainer {
+            max-height: 150px;
+            display: flex;
+            justify-content: start;
+            flex-direction: column;
+            overflow-y: scroll;
+            scrollbar-width: none;
+            
+            .users {
+                width: 100%;
+                padding: 5px;
+                align-self: flex-start;
+                gap: 20px;
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+
+                p {
+                    align-self: center;
+                    margin-right: auto;
+                }
+
+                .removeMember {
+                    padding: 5px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    width: 30px;
+                    height: 30px;
+                    opacity: 0.5;
+                    align-self: center;
+
+                    &:hover {
+                        background-color: rgba(17, 25, 40, 0.8);
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .users:nth-of-type(even) {
+                background-color: #5182fe2d;
+                border-radius: 5px;
+            }
+            
+        }
+
+
+        div:first-of-type {
+            align-items: center;
+            justify-content: left !important;
+            gap: 20px !important;
+        }
+
+        button {
+            height: 50px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            background-color: rgba(17, 25, 40, 0.8);
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .makeGroup {
+        width: 100% !important;
+        height: 100% !important;
+
+        .close {
+            display: flex !important;
+        }
+    }
+}

@@ -1,0 +1,82 @@
+.edit {
+    min-width: 400px;
+    width: max-content;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    background-color: rgba(17, 25, 40, 0.8);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    .close {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        display: none;
+        cursor: pointer;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        input {
+            padding: 20px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+        }
+
+        .descContainer {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            label {
+                align-self: flex-end;
+                font-size: 14px;
+            }
+        }
+
+        button {
+            min-width: 100px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .edit {
+        min-width: 10px !important;
+        width: 100% !important;
+        height: 100% !important;
+
+        .close {
+            display: flex !important;
+        }
+    }
+}
