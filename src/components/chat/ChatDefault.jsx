@@ -14,7 +14,7 @@ const ChatDefault = (props) => {
                 </div>
                 <div className="icons">
                     <img src="./phone.png" alt="call" className="not-avaible"/>
-                    <img src="./video.png" alt="videocall" className="not-avaible"/>
+                    <img src="./video.png" alt="call" className="not-avaible"/>
                     <img src="./info.png" alt="info"/>
                 </div>
             </div>

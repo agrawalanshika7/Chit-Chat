@@ -121,6 +121,7 @@ const Login = () => {
             toast.error(err.message);
         } finally {
             setLoading(false);
+            window.location.reload();
         }
     }
 

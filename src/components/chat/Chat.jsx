@@ -184,8 +184,6 @@ const Chat = (props) => {
                     </div>
                 </div>
                 <div className="icons">
-                    <img src="./phone.png" alt="call" className="not-avaible"/>
-                    <img src="./video.png" alt="videocall" className="not-avaible"/>
                     <img src="./info.png" alt="info" onClick={props.changeDetail}/>
                 </div>
             </div>
@@ -219,7 +217,7 @@ const Chat = (props) => {
                         <img src="./file.png" alt="file" />
                     </label>
                     <input type="file" id="file" style={{display: "none"}} onChange={handleFile} disabled={isCurrentUserBlocked || isReceiverBlocked} />
-                    <img src="./mic.png" alt="microphone" />
+                    
                 </div>
                 <form onSubmit={handleSend}>
                     <input type="text" placeholder={img.file ? "Label an image...": "Type a message..."} value={text} onChange={e => setText(e.target.value)} disabled={isCurrentUserBlocked || isReceiverBlocked}/>

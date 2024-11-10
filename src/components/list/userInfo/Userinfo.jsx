@@ -18,7 +18,6 @@ const Userinfo = () => {
             </div>
             <div className="icons">
                 <img src="./more.png" alt="more" className="not-avaible"/>
-                <img src="./video.png" alt="video" className="not-avaible"/>
                 <img src="./edit.png" alt="edit" onClick={handleEdit}/>
             </div>
             {editMode && <Edit changeEdit={handleEdit}/>}
