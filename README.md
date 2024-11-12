@@ -12,7 +12,6 @@ A real-time chat application built with React + Vite, and Firebase. This app sup
 
 ## Project Structure
 
-The architecture follows a clean, modular structure. Here’s a high-level overview:
 
 - ![Chatapp](https://github.com/user-attachments/assets/8ac12767-8197-44c6-a390-ab86330cde45)
 
@@ -20,5 +19,5 @@ The architecture follows a clean, modular structure. Here’s a high-level overv
 
 ## Technologies Used
 
-- **Frontend**: React, Vite
+- **Frontend**: React + Vite
 - **Backend**: Firebase (Authentication, Firestore, Storage)
