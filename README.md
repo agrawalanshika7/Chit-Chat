@@ -17,43 +17,6 @@ The architecture follows a clean, modular structure. Here’s a high-level overv
 
 
 
-
-## Installation
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/agrawalanshika7/Chit-Chat.git
-   cd chit-chat-app
-   ```
-
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-
-3. **Firebase Setup**:
-   - Create a Firebase project and enable Firebase Authentication, Firestore Database, and Firebase Storage.
-   - Add your Firebase config to a `.env` file:
-     ```env
-     VITE_FIREBASE_API_KEY=your_api_key
-     VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain
-     VITE_FIREBASE_PROJECT_ID=your_project_id
-     VITE_FIREBASE_STORAGE_BUCKET=your_storage_bucket
-     VITE_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
-     VITE_FIREBASE_APP_ID=your_app_id
-     ```
-
-4. **Run the app**:
-   ```bash
-   npm run dev
-   ```
-
-## Usage
-
-1. Register or log in to start using the app.
-2. Add contacts and start chatting.
-3. Upload profile pictures and share images within chats.
-
 ## Technologies Used
 
 - **Frontend**: React, Vite
