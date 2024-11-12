@@ -2,6 +2,9 @@
 
 A real-time chat application built with React + Vite, and Firebase. This app supports user authentication, chat messaging, and image storage. The Firebase backend manages user authentication, real-time database operations, and image storage.
 
+## Live site
+https://chit-chat-20.vercel.app/
+
 ## Features
 
 - **User Authentication**: Sign-up, login, and logout using Firebase Authentication.
